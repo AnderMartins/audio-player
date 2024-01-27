@@ -1,0 +1,86 @@
+@import "https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+
+:root {
+    --primary: rgb(61, 4, 175);
+}
+
+body {
+    height: 100vh;
+    background-color: #262624;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#player {
+    background-color: var(--primary);
+    width: 90%;
+    max-width: 375px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    box-shadow: none;
+    margin: 0;
+}
+
+h4 {
+    color: rgb(227, 227, 3);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.card-image {
+    background: url("https://placehold.it/500") no-repeat center center / cover;
+    height: 320px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#play-pause {
+    background-color: var(--primary);
+}
+
+.icone-volume {
+    font-size: 22px;
+    color: var(--primary);
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: var(--primary);
+  }
+  input[type="range"]::-moz-range-thumb {
+    background-color: var(--primary);
+  }
+  input[type="range"]::-ms-thumb {
+    background-color: var(--primary);
+  }
+
+  .controles {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;   
+  }
+
+  #botao-anterior {
+    color: var(--primary)
+  }
+
+  #botao-proximo {
+    color: var(--primary)
+  }
