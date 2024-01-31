@@ -9,6 +9,15 @@ export default {
     isPlaying: false,
     start() {
         elements.get.call(this);
+        this.playPause.addEventListener('touchend', () => {
+            this.togglePlayPause();
+        });
+        this.botaoProximo.addEventListener('touchend', () => {
+            this.depois();
+        });
+        this.botaoAnterior.addEventListener('touchend', () => {
+            this.antes();
+        });
         this.update();
     },
     play() {
