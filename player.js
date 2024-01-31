@@ -17,12 +17,9 @@ export default {
                 this.play();
             }
         });
-
-        this.volume.addEventListener('input', () => {
-            this.setVolume(this.volume.value);
-        });
+        
         this.volume.addEventListener('change', () => {
-            this.audio.volume = this.volume.value / 100;
+            this.setVolume(this.volume.value);
         });
 
         this.botaoProximo.addEventListener('touchend', () => {
