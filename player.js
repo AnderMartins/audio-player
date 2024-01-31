@@ -23,15 +23,12 @@ export default {
         });
         this.volume.addEventListener('change', () => {
             this.setVolume(this.volume.value);
-        });
-        this.volume.addEventListener('touchstart', (event) => {
+        }); 
+        
+        this.volume.addEventListener('touchmove', (event) => {
             event.preventDefault();
             this.setVolume(this.volume.value);
         });
-        this.volume.addEventListener('touchend', (event) => {
-            event.preventDefault();
-            this.setVolume(this.volume.value);
-        });    
         this.botaoProximo.addEventListener('touchend', () => {
             this.depois();
         });
