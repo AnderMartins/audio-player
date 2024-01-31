@@ -18,10 +18,18 @@ export default {
             }
         });
 
+        this.volume.addEventListener('input', () => {
+            this.setVolume(this.volume.value);
+        });
         this.volume.addEventListener('change', () => {
             this.setVolume(this.volume.value);
         });
-        this.volume.addEventListener('touchend', () => {
+        this.volume.addEventListener('touchstart', (event) => {
+            event.preventDefault();
+            this.setVolume(this.volume.value);
+        });
+        this.volume.addEventListener('touchend', (event) => {
+            event.preventDefault();
             this.setVolume(this.volume.value);
         });    
         this.botaoProximo.addEventListener('touchend', () => {
