@@ -18,7 +18,7 @@ export default {
             }
         });
 
-        this.volume.addEventListener('input', () => {
+        this.volume.addEventListener('change', () => {
             this.setVolume(this.volume.value);
         });
 
