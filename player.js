@@ -10,7 +10,11 @@ export default {
     start() {
         elements.get.call(this);
         this.playPause.addEventListener('touchend', () => {
-            this.togglePlayPause();
+            if (this.isPlaying) {
+                this.pause();
+            } else {
+                this.play();
+            }
         });
         this.botaoProximo.addEventListener('touchend', () => {
             this.depois();
