@@ -23,6 +23,7 @@ export default {
         this.audio.ontimeupdate = () => this.timeUpdate();
         this.playPause.onclick = () => this.togglePlayPause();
         this.mute.onclick = () => this.toggleMute();
+        this.volume.oninput = () => this.setVolume(this.volume.value);
         this.volume.onchange = () => this.setVolume(this.volume.value);
         this.seekbar.oninput = () => this.setSeek(this.seekbar.value);
         this.seekbar.onchange = () => this.setSeek(this.seekbar.value);

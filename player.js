@@ -17,11 +17,13 @@ export default {
                 this.play();
             }
         });
-        
+
         this.volume.addEventListener('change', () => {
             this.setVolume(this.volume.value);
         });
-
+        this.volume.addEventListener('touchend', () => {
+            this.setVolume(this.volume.value);
+        });    
         this.botaoProximo.addEventListener('touchend', () => {
             this.depois();
         });
