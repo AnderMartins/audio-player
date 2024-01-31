@@ -9,7 +9,8 @@ export default {
     isPlaying: false,
     start() {
         elements.get.call(this);
-        this.playPause.addEventListener('touchend', () => {
+        this.playPause.addEventListener('touchend', (event) => {
+            event.preventDefault();
             if (this.isPlaying) {
                 this.pause();
             } else {
