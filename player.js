@@ -17,18 +17,6 @@ export default {
                 this.play();
             }
         });
-
-        this.volume.addEventListener('input', () => {
-            this.setVolume(this.volume.value);
-        });
-        this.volume.addEventListener('change', () => {
-            this.setVolume(this.volume.value);
-        }); 
-        
-        this.volume.addEventListener('touchmove', (event) => {
-            event.preventDefault();
-            this.setVolume(this.volume.value);
-        });
         this.botaoProximo.addEventListener('touchend', () => {
             this.depois();
         });
