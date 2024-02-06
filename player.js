@@ -15,7 +15,8 @@ export default {
         if (isMobile) {
             document.querySelector('.icone-volume').style.display = 'none';
             document.querySelector('#vol-control').style.display = 'none';
-            document.querySelector('#current-duration').style.marginLeft = '30px';
+            document.querySelector('#current-duration').style.marginLeft = '25px';
+            document.querySelector('#total-duration').className = 'col s1';
         }
 
         this.playPause.addEventListener('touchend', (event) => {
@@ -26,13 +27,6 @@ export default {
                 this.play();
             }
         });
-        this.botaoProximo.addEventListener('touchend', () => {
-            this.depois();
-        });
-        this.botaoAnterior.addEventListener('touchend', () => {
-            this.antes();
-        });
-        this.update();
     },
     play() {
         this.isPlaying = true;
