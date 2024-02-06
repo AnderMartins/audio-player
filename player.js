@@ -15,8 +15,8 @@ export default {
         if (isMobile) {
             document.querySelector('.icone-volume').style.display = 'none';
             document.querySelector('#vol-control').style.display = 'none';
-            document.querySelector('#current-duration').style.marginLeft = '30px';
-            document.querySelector('#total-duration').style.marginRight = '-35px';
+            document.querySelector('#current-duration').style.marginLeft = '35px';
+            //document.querySelector('#total-duration').style.marginRight = '-35px';
         }
 
         this.playPause.addEventListener('touchend', (event) => {
