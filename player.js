@@ -16,6 +16,7 @@ export default {
             document.querySelector('.icone-volume').style.display = 'none';
             document.querySelector('#vol-control').style.display = 'none';
             document.querySelector('#current-duration').style.marginLeft = '45px';
+            document.querySelector('#total-duration').class = 'col s1';
         }
 
         this.playPause.addEventListener('touchend', (event) => {
