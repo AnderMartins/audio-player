@@ -13,8 +13,8 @@ export default {
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
         if (isMobile) {
-            this.mute.parentElement.style.display = 'none';
-            this.volume.parentElement.style.display = 'none';
+            document.querySelector('.icone-volume').style.display = 'none';
+            document.querySelector('#vol-control').style.display = 'none';
         }
 
         this.playPause.addEventListener('touchend', (event) => {
