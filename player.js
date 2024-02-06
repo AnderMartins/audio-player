@@ -9,6 +9,15 @@ export default {
     isPlaying: false,
     start() {
         elements.get.call(this);
+
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            this.audio.volume = 0;
+            this.mute.parentElement.style.display = 'none';
+            this.volume.parentElement.style.display = 'none';
+        }
+
         this.playPause.addEventListener('touchend', (event) => {
             event.preventDefault();
             if (this.isPlaying) {
