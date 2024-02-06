@@ -15,7 +15,7 @@ export default {
         if (isMobile) {
             document.querySelector('.icone-volume').style.display = 'none';
             document.querySelector('#vol-control').style.display = 'none';
-            document.querySelector('#current-duration').style.marginLeft = '25px';
+            document.querySelector('#current-duration').style.marginLeft = '20px';
             document.querySelector('#total-duration').className = 'col s1';
         }
 
